@@ -1,0 +1,70 @@
+/* MovieGrid.css */
+
+.movie-grid-container {
+    margin-left: 2px;
+    padding: 20px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 2px;
+  }
+  
+  .movie-card {
+    background-color: #fdfefe;
+    display: grid;
+    position:relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit:fill; /* Maintain aspect ratio and fill the container */
+    border-radius: 10px;
+  }
+  
+  .movie-card h3 {
+    margin: 15px 0 15px;
+    font-size: 18px;
+    color: darkcyan;
+  }
+  
+  .movie-card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .rating-circle {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    top: 260px;
+    right: 6px;
+  }
+  
+  .rating-circle .CircularProgressbar {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rating-circle .CircularProgressbar .CircularProgressbar-text {
+    fill: #000; /* or set this to the color you want */
+    font-size: 26px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  
